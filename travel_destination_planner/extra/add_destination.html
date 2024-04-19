@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Destination - Admin Panel</title>
+    <link rel="stylesheet" href="admin_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Destination</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <form action="add_destination.php" method="POST" enctype="multipart/form-data">
+                <label for="name">Destination Name:</label>
+                <input type="text" name="name" required><br>
+                <label for="description">Description:</label>
+                <textarea name="description" required></textarea><br>
+                <label for="image">Upload Image:</label>
+                <input type="file" name="image" accept="image/*" required><br>
+                <button type="submit" class="button">Add Destination</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Travel Planner</p>
+    </footer>
+</body>
+</html>
